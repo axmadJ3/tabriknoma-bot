@@ -8,7 +8,7 @@ from aiogram import Bot, Dispatcher
 from aiogram.client.default import DefaultBotProperties
 from aiogram.enums import ParseMode
 
-from handlers.register import register_router
+from handlers import register, shop
 
 dotenv.load_dotenv()
 
@@ -18,7 +18,8 @@ TOKEN = getenv("BOT_TOKEN")
 async def main() -> None:
     dp = Dispatcher()
     dp.include_routers(
-        register_router,
+        register.register_router,
+        shop.shop_router,
         )
     
     bot = Bot(token=TOKEN, default=DefaultBotProperties(parse_mode=ParseMode.HTML))
