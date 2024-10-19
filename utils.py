@@ -27,7 +27,6 @@ words = {
     "tugilgan-ru": "День рождения",
     "choose-event-uz": "Qanday tadbir uchun?",
     "choose-event-ru": "На какое мероприятие?",
-    
 }
 
 

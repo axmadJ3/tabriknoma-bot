@@ -1,7 +1,7 @@
 from aiogram.fsm.state import State, StatesGroup
 
 
-class ShopForm(StatesGroup):
+class Shop(StatesGroup):
     product_type = State()
     event_type = State()
     event = State()
